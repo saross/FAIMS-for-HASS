@@ -58,18 +58,15 @@
 
 \usepackage{comment} % for commenting out multiple lines; uses \begin{comment} ... \end{comment}
 
-\title{`Trust but verify': Open Scholarship in HASS} % Presentation title
+\title{ight Years of FAIMS Mobile: Bringing FAIR data to HASS} % Presentation title
 \author{A/Prof Shawn A Ross, Director of Data Science and eResearch}               % Presentation author
 \institute{Office of the Deputy Vice-Chancellor (Research)}         % Author affiliation
-\date{Wednesday 30 October 2019}                 % Today's date  
+\date{Thursday 14 May 2020}                 % Today's date  
 \begin{document}
 
 % Title page
 % This page includes the information defined earlier including title, author/s, affiliation/s and the date
 % \begin{frame}[noframenumbering]
-
-%Abstract: Since the recognition of the 'reproducibility crisis' a decade ago, research technologies have been proposes as part of the solution. What began as recommendations or guides to best practice have evolved into publisher and funder mandates, and have influenced codes of ethical practice. The Findable, Accessible, Interoperable, and Reusable (FAIR) data principles and the Transparency and Openness Promotion (TOP) guidelines have been among the most influential. Both have been endorsed by funders and publishers, and are poised to change research practice beyond the early adopters already implementing them. To void marginalisation - the inability to publish in quality outlets or compete for major grants - researchers from across disciplines are facing significant change to daily practice, requiring much more technical literacy and computational thinking ability than most now possess. The transformation of research requires retraining of mid-career and senior researchers, but will likely depend upon training younger researchers, even in disciplines where such training is not customary.
-
 
 \maketitle
 
@@ -92,7 +89,7 @@
 
 % Presentation providing context for the new data governance policies and procedures at Macquarie University
 
-\section{Transparency and reproducibility}
+\section{Why should we care about FAIR data?}
 
 \begin{frame}{The `reproducibility crisis'}
   For nearly a decade the reproducibility crisis has featured in the scientific literature \cite{Jasny2011-bw, Baker2016-cf, Munafo2017-bj}. Low reproducibility rates have emerged from large-scale studies:
@@ -130,7 +127,7 @@
     \end{itemize}
 \end{frame}
 
-\section{From guidelines to mandates}
+\section{FAIR data mandates}
 
 \begin{frame}{Journal transparency mandates}
   Mandates for transparency or reproducibility:
@@ -201,7 +198,7 @@
   With the Horizon 2020 program \cite{European_Commission2019-an} Europe made 'research data open by default':
     \begin{itemize}[label=\textbullet]
         \item `Participating projects will be required to develop a \textbf{Data Management Plan} (DMP), in which they will specify \textbf{what data will be open}: detailing \textbf{what data the project will generate}, whether and how it will be \textbf{exploited or made accessible for verification and re-use}, and how it will be \textbf{curated and preserved}.'
-        \item Opt-outs: 'as open as possible, as closed as necessary'.
+        \item Data should be '\textbf{as open as possible, as closed as necessary}'.
         \item Associated costs can be claimed in grant.
         \item Continuing investment, e.g., FAIRsFAIR project \cite{Knaw-dans2019-sv} to implement FAIR across repositories.
     \end{itemize}
@@ -211,57 +208,36 @@
   Changes are coming to HASS disciplines:
     \begin{itemize}[label=\textbullet]
         \item American Journal of Political Science requires (and tests) data and code \cite{Jacoby2017-lw, Ajps2015-ex}.
+        \item Research Data Alliance (RDA) has an 'Ambassador for the Humanities' and is examining how RDA standards and outputs can apply to humanities disciplines \cite{Rda2019-wc}.
         \item All European Academies (allea) E-Humanities working group \cite{Allea2019-wy} has issued an Open Consultation on `Sustainable and FAIR Data Sharing in the Humanities' \cite{Allea2019-aw}.
         \item Allea seeks to address the imperatives of the `Open Science agenda' across Humanities and Social Sciences, and `facilitate the adoption of Open Science across the Humanities'.
-        \item Research Data Alliance (RDA) has an 'Ambassador for the Humanities' and is examining how RDA standards and outputs can apply to humanities disciplines \cite{Rda2019-wc}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{ALLEA report on FAIR Data in the Humanities }
+  'Sustainable and FAIR Data Sharing in the Humanities' recommendations:
+    \begin{itemize}[label=\textbullet]
+        \item 'Think of all your research assets as data...digitally document all your research and data collection work...use well-established tools...'
+        \item 'Devise a [Data Management Plan]...plan documentation of metadata...use standardised terminology...factor the cost of research data management'
+        \item 'Look for widely used formats possibly with documented standards....'
+        \item 'Use open standards...standardised technologies and procedures. prefer human and machine-readable systems...normalise as much as possible...'
+        \item 'Identify who owns the data...use free and standardised licences...make your licence machine-readable...'
+        \item 'Use disciplinary repositories where they exist...datasets should...include the richest metadata possible...'
+        \item 'Share online your data and all supporting materials...'
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Challenges in HASS disciplines}
-  In the current environment, we need to demonstrate how robust and reliable our research is. Considering the evidence we use, however, HASS faces legal and technical challenges to showing our work:
-    \begin{itemize}[label=\textbullet]
-        \item Copyright: texts, archival documents, films and audio recordings, secondary sources.
-        \item For evidence that is online, links and references possible (but access may have a cost); if not online, the tyranny of distance re-asserts itself (if access is possible at all). 
-        \item Technical: 'small data' problems, including diverse and heterogenous data of various types, plus data and methods often emergent from research; harder than 'big data' in many ways, requires flexible and extensible infrastructure from a poorly coordinated and poorly funded domain \cite{Borgman2015-rh}.
-        \cite{Rda2019-wc}.
+      \begin{itemize}[label=\textbullet]
+        \item Copyright restrictions on texts, archival documents, films, audio recordings, secondary sources, etc.
+        \item For evidence that is online, links and references possible (but access may have a cost, and links may die); if not online, the tyranny of distance re-asserts itself (if access is possible at all). 
+        \item Technical: 'small data' problems, including diverse data; data and methods often emerge from research; just as hard as 'big data', requires flexible and extensible infrastructure from a poorly coordinated and poorly funded domains \cite{Borgman2015-rh, Rda2019-wc}.
+        \item Socio-technical: training and expertise mismatch, \textbf{up-front time investment}, costs of suitable infrastructure and willingness to budget for them.
+        \cite{Mons2020-tb}.
     \end{itemize}
 \end{frame}
 
-\begin{comment}
-
-\begin{frame}{Australia: Data sharing in the NHMRC Statement}
-    The NHMRC `strongly encourages' data sharing in the National Statement on Ethical Conduct in Human Research and their Open Access Policy. \cite{Nhmrc2018-sj, Nhmrc2018-vn} \par
-    National Statement 3.1.50 \par
-    In the absence of justifiable ethical reasons (such as respect for cultural ownership or unmanageable risks to the privacy of research participants) and to promote access to the benefits of research, researchers should collect and store data or information generated by research projects in such a way that they can be used in future research projects. Where a researcher believes there are valid reasons for not making data or information accessible, this must be justified.
-\end{frame}
-
-\begin{frame}{NHMRC Open Access Policy 2018 changes}
-    Key changes to the Open Access Policy (15 January 2018) \par
-    Research data and metadata (2.2) \par
-    NHMRC now strongly encourages researchers to take reasonable steps to share research data and associated metadata arising from NHMRC supported research.\par
-    FAIR principles (2.7) \par
-    Reference to the Australian F.A.I.R. principles (Findable, Accessible, Interoperable, Reusable) when publishing research literature and sharing data has been made.
-\end{frame}
-
-\begin{frame}{NHMRC Open Access Policy data sharing}
-    Medatdata (4.1) \par
-    The metadata for the peer-reviewed publication must be made openly accessible via an institutional repository as soon as possible but no later than 3 months from the date of publication. \par
-    Data (4.2) \par
-    NHMRC acknowledges the importance of making research data publicly accessible and therefore strongly encourages researchers to consider the reuse value of their data and to take reasonable steps to share research data and associated metadata arising from NHMRC supported research.
-\end{frame}
-
-\begin{frame}{Legal compliance}
-    \begin{itemize}[label=\textbullet]
-        \item NSW General Retention and Disposal Authority GDA 23; data associated with `significant' research or researchers must be kept forever (23.6.1) \cite{Nsw2015-kv}
-        \item NSW Privacy and Personal Information Protection Act 1998 No 133, esp. Part 2, Division 1, Section 19, which flags indicators of high sensitivity and establishes data sovereignty.\cite{Nsw1998-mw} Compare the (Australian) Privacy Act 1988, esp. Part II, Division 1, Section 6 `Sensitive Information' and Schedule 1, and `Australian Privacy Principles', Section 8, which covers some university-controlled entities. \cite{Ag2017-oz,Oaic2019-ng}
-        \item NSW Notifiable Data Breach guidance \cite{Ipc_nsw2018-yr}; see also the Australian Notifiable Data Breaches scheme \cite{Oaic2019-dq}
-        \item EU General Data Protection Regulation \cite{Gdpr2019-ee}
-    \end{itemize}
-\end{frame}
-
-\end{comment}
-
-\section{Beyond compliance}
+\section{Beyond compliance: improving research}
 
 \begin{frame}{Large-scale research}
     The same approaches that facilitate transparency and reproducibility support the kind of scalable and synthetic research that can address archaeological `grand challenges'. \cite{Kintigh2014-ub}
@@ -357,7 +333,7 @@
 
 % Slides to speak to at WSU 5 June 2019
 
-\section{The FAIMS approach: summary}
+\section{The FAIMS approach}
 
 \begin{frame}{Research Specific}
  \begin{figure}[H]
@@ -368,6 +344,22 @@
  \end{figure}
 \end{frame}
 
+\begin{frame}{Key research-specific FAIMS Mobile features}
+    \begin{itemize}[label=\textbullet]
+        \item Fundamentally customisable (interpreter + definition files).
+        \item Tightly binds structured, geospatial, multimedia, and free text data.
+        \item Offline first, with automated bi-directional synchronisation.
+        \item Record history: append-only datastore, versioning, rollback.
+        \item Mobile GIS.
+        \item Multimedia management (e.g., file renaming from record content).
+        \item Connects to internal and external sensors, Bluetooth / USB devices.
+        \item Multilingual.
+        \item Granular help.
+        \item Granular metadata.
+        \item Generalised export.
+        \item `Hooks’ for data interoperability, Open Linked Data approaches.
+    \end{itemize}
+\end{frame}
 
 \begin{frame}{Generalised}
  \begin{figure}[H]
@@ -396,25 +388,31 @@
  \end{figure}
 \end{frame}
 
-\begin{comment}
-
-
-\begin{frame}{Key research-specific FAIMS Mobile features}
+\begin{frame}{Status and plans for the future}
     \begin{itemize}[label=\textbullet]
-        \item Fundamentally customisable (interpreter + definition files).
-        \item Tightly binds structured, geospatial, multimedia, and free text data.
-        \item Works offline.
-        \item Automated bi-directional synchronisation using local or online server
-        \item Record history: append-only datastore, versioning, rollback.
-        \item Mobile GIS.
-        \item Connects to internal and external sensors, Bluetooth / USB devices.
-        \item Multilingual.
-        \item Granular help.
-        \item Granular metadata / uncertainty.
-        \item Generalised export.
-        \item `Hooks’ for data interoperability, Open Linked Data approaches.
+        \item FAIMS v2.6 is nearing end of its useful life.
+        \item A high-level technical plan for FAIMS v3.0 won a US design prize in 2017 \cite{Bureau_of_Reclamation2017-xl}.
+        \item Any future iteration of FAIMS must be sustainable via commercialisation as a (primarily) self-service platform.
+        \item The FAIMS team did CSIRO ON Prime in 2016, completing 70+ interviews with clients / potential clients.
+        \item \textbf{We have won a \$600k ARDC Platforms grant to rebuild FAIMS.}
+        \item Challenges: sustainability, uptake (overcoming resistance initial setup investment; overcoming resistance to cost), balancing open research requirements against commercialisation demands.
     \end{itemize}
 \end{frame}
+
+\begin{frame}{Planned technical improvements}
+User / potential user interviews drive technical improvements, which aim to make deployment and use easier, increasing update.
+    \begin{itemize}[label=\textbullet]
+        \item Cross-platform support (Android; iOS; desktop)
+        \item Self-customisation by the user via a GUI-based web application.
+        \item Orchestrated deployment of infrastructure to (e.g.) Amazon Web Services.
+        \item Data 'round-trip' to desktop or online software.
+        \item Exposure of data via an API
+        \item Improved scalability (application performance; synchronisation performance; server-to-server synchronisation)
+        \item Improved user management and security
+    \end{itemize}
+\end{frame}
+
+\begin{comment}
 
 \begin{frame}{Selected FAIMS Testimonials}
     \begin{itemize}[label=\textbullet]
