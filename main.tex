@@ -58,7 +58,7 @@
 
 \usepackage{comment} % for commenting out multiple lines; uses \begin{comment} ... \end{comment}
 
-\title{ight Years of FAIMS Mobile: Bringing FAIR data to HASS} % Presentation title
+\title{Bringing FAIR data to Humanities research} % Presentation title
 \author{A/Prof Shawn A Ross, Director of Data Science and eResearch}               % Presentation author
 \institute{Office of the Deputy Vice-Chancellor (Research)}         % Author affiliation
 \date{Thursday 14 May 2020}                 % Today's date  
@@ -91,7 +91,7 @@
 
 \section{Why should we care about FAIR data?}
 
-\begin{frame}{The `reproducibility crisis'}
+\begin{frame}{It started with the `reproducibility crisis'}
   For nearly a decade the reproducibility crisis has featured in the scientific literature \cite{Jasny2011-bw, Baker2016-cf, Munafo2017-bj}. Low reproducibility rates have emerged from large-scale studies:
     \begin{itemize}[label=\textbullet]
         \item Results from only 39\% of psychology studies could be reproduced \cite{Open_Science_Collaboration2015-vf}.
@@ -99,7 +99,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Perceptions of the reproducibility crisis}
+\begin{frame}{Perceptions of a crisis}
   \begin{figure}[H]
     \centering
         \includegraphics[height=.7\textheight]{figures/reproducibility-graphic-online1.jpeg}
@@ -108,7 +108,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Motivation: Preserving data}
+\begin{frame}{Lost data}
  \begin{figure}[H]
     \centering
         \includegraphics[height=.75\textheight]{figures/Missing-Data.png}
@@ -117,7 +117,7 @@
  \end{figure}
 \end{frame}
 
-\begin{frame}{The response: calls for rigour and transparency}
+\begin{frame}{Calls for rigour and transparency}
   Manifestos, statements, and guidelines:
     \begin{itemize}[label=\textbullet]
         \item Early example: OECD Priniples and Guidelines for Access to Research Data \cite{Oecd2007-vi}.
@@ -142,7 +142,7 @@
 % https://tex.stackexchange.com/a/2292/5483
 % https://ctan.org/pkg/enumitem?lang=en
 
-\begin{frame}{Level 2 TOP Guidelines for authors (excerpt)}
+\begin{frame}{Level 2 TOP Guidelines for authors}
   
     \begin{enumerate}[label=\arabic*.]
         \setcounter{enumi}{1}
@@ -231,21 +231,23 @@
       \begin{itemize}[label=\textbullet]
         \item Copyright restrictions on texts, archival documents, films, audio recordings, secondary sources, etc.
         \item For evidence that is online, links and references possible (but access may have a cost, and links may die); if not online, the tyranny of distance re-asserts itself (if access is possible at all). 
-        \item Technical: 'small data' problems, including diverse data; data and methods often emerge from research; just as hard as 'big data', requires flexible and extensible infrastructure from a poorly coordinated and poorly funded domains \cite{Borgman2015-rh, Rda2019-wc}.
         \item Socio-technical: training and expertise mismatch, \textbf{up-front time investment}, costs of suitable infrastructure and willingness to budget for them.
+        \item Technical: 'small data' problems, including diverse data; data and methods often emerge from research; just as hard as 'big data', requires flexible and extensible infrastructure from a poorly coordinated and poorly funded domains \cite{Borgman2015-rh, Rda2019-wc}.
         \cite{Mons2020-tb}.
     \end{itemize}
 \end{frame}
 
 \section{Beyond compliance: improving research}
 
-\begin{frame}{Using the wrong tools hinders research}
-  \begin{figure}[H]
-    \centering
-        \includegraphics[height=.7\textheight]{figures/Ocean-Health-Index.jpg}
-        \caption{Spreadsheets, though ubiquitous in research, are rarely a good idea...}
-        \label{fig:stewart_lowndes}
-  \end{figure}
+\begin{frame}{Avoiding 'technical debt' and boring work}
+    Too often in humanities research we settle for generic tools that are not a very good fit for what we actually need to do. 
+        \begin{itemize}[label=\textbullet]
+            \item Spreadsheets, though ubiquitous in research, are rarely a good idea
+            \item Manual image management (renaming, etc.) takes a lot of time.
+            \item Using several different tools, one each for structured data, images, geospatial data, etc., requires a lot of reconciliation time.
+            \item The commonality is \textbf{technical debt}: trading quick setup for lengthy digitisation, cleaning, reconciliation, streamlining later.
+            \item Let computers do the boring things that people are bad at, so that you can focus on the interesting parts of research.
+    \end{itemize}
 \end{frame}
 
 
