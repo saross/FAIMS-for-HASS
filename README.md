@@ -1,4 +1,4 @@
-An evolving presentation proving context for the new data governance standards at Macquarie University. Also delivered in other venues. 
+A slide deck for a presentation about open research in Humanities, Arts, and Social Sciences disciplines as context for the development of FAIMS Mobile, delivered to the University of Technology Sydney Digital History group on 14 May 2020.
 
 See 'releases' for PDFs of presentations.
 
